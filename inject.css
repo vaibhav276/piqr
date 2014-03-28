@@ -1,0 +1,21 @@
+#piQRCodeDlg {
+	font-family: 'Arial', 'Helvetica', 'Times';
+	font-size: 12px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin: auto;
+
+	width: 300px;
+	height: 400px;
+
+	background: #edf4fc;
+	border: 2px solid #ddd;
+	border-radius: 2px;
+
+	text-align: center;
+}
+
+#piQRCode {
+	margin-left: 25px;
+}

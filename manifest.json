@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+
+    "name": "PiQR",
+    "description": "Quickly generate QR code to send any text information to your phone/tablet.",
+    "version": "1.0",
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "css": ["inject.css"],
+        "js": ["jquery.min.js", "qrcode.min.js", "inject.js"],
+        "run_at": "document_end"
+    }],
+    "background": {
+        "persistent": true,
+        "scripts": ["background.js"]
+    },
+    "icons": {
+        "128": "icon.png"
+    }
+}
